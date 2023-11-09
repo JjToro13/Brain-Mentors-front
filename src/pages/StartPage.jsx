@@ -1,4 +1,6 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
+
 import {
   View,
   TouchableOpacity,
@@ -7,7 +9,7 @@ import {
   SafeAreaView,
 } from "react-native";
 
-export default function StartPage() {
+export default function StartPage({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
@@ -22,7 +24,7 @@ export default function StartPage() {
 
         <TouchableOpacity
           style={styles.button}
-          onPress={() => console.log("Registrarse")}
+          onPress={() => navigation.navigate("SignUpPage")}
         >
           <Text style={styles.buttonText}>Registrarse</Text>
         </TouchableOpacity>
@@ -56,7 +58,7 @@ const styles = StyleSheet.create({
     fontSize: 50,
     fontWeight: "bold",
     marginBottom: 50,
-    color: "#F2F2F2"
+    color: "#F2F2F2",
   },
   button: {
     backgroundColor: "#0CC0DF",
