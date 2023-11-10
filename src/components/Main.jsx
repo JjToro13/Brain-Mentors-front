@@ -10,8 +10,16 @@ const Stack = createNativeStackNavigator();
 function StackGroup() {
   return (
     <Stack.Navigator initialRouteName="StartPage">
-      <Stack.Screen name="StartPage" component={StartPage} />
-      <Stack.Screen name="SignUpPage" component={SignUpPage} />
+      <Stack.Screen
+        name="StartPage"
+        component={StartPage}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="SignUpPage"
+        component={SignUpPage}
+        options={{ title: "Crea tu Usuario", headerStyle:{backgroundColor: "#DCDEF7"} }}
+      />
     </Stack.Navigator>
   );
 }

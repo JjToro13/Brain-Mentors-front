@@ -1,5 +1,3 @@
-import { useNavigation } from "@react-navigation/native";
-import React from "react";
 
 import {
   View,
@@ -9,7 +7,7 @@ import {
   SafeAreaView,
 } from "react-native";
 
-export default function StartPage({navigation}) {
+export default function StartPage({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
