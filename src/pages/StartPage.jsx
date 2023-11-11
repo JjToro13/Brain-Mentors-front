@@ -1,4 +1,3 @@
-
 import {
   View,
   TouchableOpacity,
@@ -15,26 +14,26 @@ export default function StartPage({ navigation }) {
 
         <TouchableOpacity
           style={styles.button}
-          onPress={() => console.log("Ingresar")}
+          onPress={() => navigation.navigate("LoginPage")}
         >
-          <Text style={styles.buttonText}>Ingresar</Text>
+          <Text style={styles.buttonText}>INGRESAR</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate("SignUpPage")}
         >
-          <Text style={styles.buttonText}>Registrarse</Text>
+          <Text style={styles.buttonText}>REGISTRARSE</Text>
         </TouchableOpacity>
       </View>
 
       <View style={styles.bottomContainer}>
-        <TouchableOpacity onPress={() => console.log("Terms of Use")}>
-          <Text style={styles.bottomText}>Terms of Use</Text>
+        <TouchableOpacity onPress={() => navigation.navigate("TermsOfUsePage")}>
+          <Text style={styles.bottomText}>Términos del Servicio</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => console.log("Privacy Policy")}>
-          <Text style={styles.bottomText}>Privacy Policy</Text>
+        <TouchableOpacity onPress={() => navigation.navigate("PrivacyPolicyPage")}>
+          <Text style={styles.bottomText}>Política de Privacidad</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -44,7 +43,7 @@ export default function StartPage({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#D75177", // Color de fondo de la SafeAreaView
+    backgroundColor: "  #EFF1F3", // Color de fondo de la SafeAreaView
   },
   content: {
     flex: 1,
@@ -56,17 +55,17 @@ const styles = StyleSheet.create({
     fontSize: 50,
     fontWeight: "bold",
     marginBottom: 50,
-    color: "#F2F2F2",
+    color: "#223843",
   },
   button: {
-    backgroundColor: "#0CC0DF",
+    backgroundColor: "#D8B4A0",
     width: 200,
     paddingVertical: 15,
     borderRadius: 5,
     marginVertical: 10,
   },
   buttonText: {
-    color: "#F2F2F2",
+    color: "#223843",
     fontSize: 18,
     fontWeight: "bold",
     textAlign: "center",
@@ -76,7 +75,7 @@ const styles = StyleSheet.create({
     marginBottom: 20, // Espaciado inferior para los textos en la parte inferior
   },
   bottomText: {
-    color: "#F2F2F2",
+    color: "#223843",
     fontSize: 16,
     marginVertical: 5,
   },
