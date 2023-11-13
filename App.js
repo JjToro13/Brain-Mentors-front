@@ -1,10 +1,13 @@
-import Main from "./src/component/Main.jsx";
-import { NativeRouter } from "react-router-native";
+import "react-native-gesture-handler";
+import Main from "./src/components/Main.jsx";
+import { StatusBar } from "expo-status-bar";
 
 export default function App() {
   return (
-    <NativeRouter>
+    <>
+      <StatusBar style="dark" />
+
       <Main />
-    </NativeRouter>
+    </>
   );
 }
