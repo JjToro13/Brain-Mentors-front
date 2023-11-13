@@ -1,10 +1,10 @@
 import { Text, View, StyleSheet, SafeAreaView } from "react-native";
 
-export default function HomePage() {
+export default function PrivacyPolicyPage() {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <Text style={styles.title}>Pagina principal</Text>
+        <Text style={styles.title}>Política de Privacidad de la app</Text>
       </View>
     </SafeAreaView>
   );

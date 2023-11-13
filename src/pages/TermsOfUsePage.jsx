@@ -1,10 +1,10 @@
 import { Text, View, StyleSheet, SafeAreaView } from "react-native";
 
-export default function HomePage() {
+export default function TermsOfUsePage() {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <Text style={styles.title}>Pagina principal</Text>
+        <Text style={styles.title}>Términos de uso de la app</Text>
       </View>
     </SafeAreaView>
   );
